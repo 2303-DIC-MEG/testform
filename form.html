@@ -9,7 +9,7 @@
     <body>
         <div class="container">
         <h1>お問い合わせフォーム</h1>
-        <from action="index.html"method="post">
+        <from>
             <table class="contact">
                 <tr>
                     <th>お名前</th>
@@ -17,21 +17,22 @@
                 </tr>
                 <tr>
                     <th>メールアドレス</th>
-                    <td><input class="input_form" type="text" name="mail" class="text"></td>
+                    <td><input class="input_form" type="email" name="mail" class="text"></td>
                 </tr>
                 <tr>
                     <th>性別</th>
                     <td>
                     <input type="radio" name="sex" value="male">男
                     <input type="radio" name="sex" value="female">女
+                    <input type="radio" name="sex" value="noanswer" checked>回答なし
                     </td>
                 </tr>
                 <tr>
                     <th>お問い合わせ内容</th>
-                    <td><textarea name="question"class="input_text" class="text"></textarea>
+                    <td><textarea name="question"class="input_text" class="text" maxlength="500"></textarea>
                 </tr>        
                 </table>
-                <div class="submit">
+                <div class="submit2">
                 <input class="submit" type="submit" name="送信">
             </div>
     </form> 
